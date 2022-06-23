@@ -1,6 +1,6 @@
 class Solution {
     public List<List<Integer>> generate(int numRows) {
-        // O() time & O() space
+        // O(n) time & O(1) space
         
         List<List<Integer>> pascalTriangle = new ArrayList<>();
         
