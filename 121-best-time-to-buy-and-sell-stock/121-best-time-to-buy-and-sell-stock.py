@@ -1,18 +1,17 @@
-class Solution {
-    public int maxProfit(int[] prices) {
-        // O(n) time & O(1) space
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        # O(n) time & O(1) space
         
-        int n = prices.length;
-        int minSoFar = Integer.MAX_VALUE;
-        int maxProfit = Integer.MIN_VALUE;
+        min_so_far = float('inf')
+        max_profit = float('-inf')
         
-        for(int i = 0; i < n; i++) {
-            if(prices[i] < minSoFar) minSoFar = prices[i];
-            
-            int currentProfit = prices[i] - minSoFar;
-            if(currentProfit > maxProfit) maxProfit = currentProfit;
-        }
+        for i in range(len(prices)):
+            if prices[i] < min_so_far:
+                min_so_far = prices[i]
+                
+            curr_profit = prices[i] - min_so_far
+            if curr_profit > max_profit:
+                max_profit = curr_profit
+                
+        return max_profit
         
-        return maxProfit;
-    }
-}
