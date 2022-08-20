@@ -6,12 +6,10 @@ class Solution:
         max_profit = float('-inf')
         
         for i in range(len(prices)):
-            if prices[i] < min_so_far:
-                min_so_far = prices[i]
+            min_so_far = min(prices[i], min_so_far)
                 
             curr_profit = prices[i] - min_so_far
-            if curr_profit > max_profit:
-                max_profit = curr_profit
+            max_profit = max(curr_profit, max_profit)
                 
         return max_profit
         
