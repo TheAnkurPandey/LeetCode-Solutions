@@ -10,7 +10,7 @@ class Solution:
     
     def isSymmetricHelper(self, 
                     root_a: Optional[TreeNode], 
-                    root_b: Optional[TreeNode]):
+                    root_b: Optional[TreeNode]) -> bool:
         # O(n) time & O(h) space
         
         # Base case
