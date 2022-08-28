@@ -43,5 +43,7 @@ class Solution:
         for neigh in adj[src]:
             path_found = path_found or self.has_path(adj, neigh, dest, visited)
             
+        visited[src] = Color.BLACK
+            
         return path_found
         
