@@ -45,7 +45,7 @@ class Solution:
     
     def topological_sort(self, adj: List[List[int]], src: int, 
                          visited: List[Color], stack: deque) -> bool:
-        # return True of has cycle
+        # Return True if has cycle
         # O(V + E) time & O(V) space
         
         # Base case
