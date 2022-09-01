@@ -6,7 +6,7 @@ class Solution {
         
         double sum = 0;
         int n = salary.length - 2;
-        for(int i = 1; i <= n; i++) sum+= salary[i];
+        for(int i = 1; i <= n; i++) sum += salary[i];
         
         double avg = sum / n;
         
