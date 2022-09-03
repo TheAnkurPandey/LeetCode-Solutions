@@ -1,7 +1,7 @@
 class Solution {
     public List<Integer> lexicalOrder(int n) {
-        return lexicalOrderComparator(n);
-        // return lexicalOrderDfsClient(n);
+        // return lexicalOrderComparator(n);
+        return lexicalOrderDfsClient(n);
     }
     
     private List<Integer> lexicalOrderComparator(int n) {
