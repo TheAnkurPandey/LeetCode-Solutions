@@ -6,7 +6,7 @@ class Solution {
         Arrays.sort(points, (p1, p2) -> p1[0] - p2[0]);  // Sort points by x axis
         
         int n = points.length;
-        int maxWidth = Integer.MIN_VALUE;
+        int maxWidth = 0;
         
         for (int i = 0; i < n - 1; i++) {
             int diff = points[i + 1][0] - points[i][0];
