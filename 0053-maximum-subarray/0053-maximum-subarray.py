@@ -7,7 +7,7 @@ class Solution:
         for i, v in enumerate(nums):
             # nums[i] can be part of current subarray
             if maxSubArraySumEndingHere > 0:
-                maxSubArraySumEndingHere = maxSubArraySumEndingHere + v
+                maxSubArraySumEndingHere += v
             # nums[i] is not part of current subarray
             else:
                 maxSubArraySumEndingHere = v
